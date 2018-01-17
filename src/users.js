@@ -3,7 +3,7 @@
  * @author Stone Lee<loverinfolee@gmail.com>
  */
 import React from 'react';
-import { List, Datagrid, EmailField, TextField } from 'admin-on-rest';
+import { List, Datagrid, EmailField, TextField, EditButton, ShowButton } from 'admin-on-rest';
 
 const UserList = (props) => (
     <List title="All users" {...props}>
@@ -12,6 +12,8 @@ const UserList = (props) => (
             <TextField source="name" />
             <TextField source="username" />
             <EmailField source="email" />
+            <EditButton />
+            <ShowButton />
         </Datagrid>
     </List>
 );

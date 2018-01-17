@@ -13,6 +13,7 @@ import {
     ReferenceField,
     ReferenceInput,
     EditButton,
+    ShowButton,
 } from 'admin-on-rest';
 
 const PostFilter = (props) => (
@@ -34,6 +35,7 @@ const PostList = (props) => (
             <TextField source="title" />
             <TextField source="body" />
             <EditButton />
+            <ShowButton />
         </Datagrid>
     </List>
 );
